@@ -1,0 +1,58 @@
+.grid-container {
+  background: lightsalmon;
+  justify-content: center;
+  display: flex;
+  grid-column-gap: 50px;
+  height: 100vh;
+}
+
+.griditem1 {
+  margin: 50px;
+}
+
+.button {
+  color: white;
+  font-weight: 800;
+  background: grey;
+  border-radius: 15px;
+  padding: 10px;
+  outline: none;
+}
+
+.display {
+  font-family: "Rimouski";
+  color: white;
+  width: 300px;
+  height: 200px;
+}
+
+.container1 {
+  padding-top: 20px;
+  display: grid;
+  grid-template: repeat(9, 100px) / repeat(1, 100px);
+  gap: 10px;
+}
+
+.box1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .container1 {
+    grid-template: repeat(5, 100px) / repeat(2, 100px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container1 {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(4, 100px);
+  }
+  .box-one {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+  }
+}
