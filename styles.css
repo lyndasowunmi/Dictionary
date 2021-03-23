@@ -6,28 +6,83 @@
   height: 100vh;
 }
 
+.heading {
+  font-family: "Rimouski";
+  font-weight: bolder;
+  text-align: center;
+  border: 2px solid darkslategray;
+  border-radius: 10px;
+  background: grey;
+  padding: 10px;
+}
+
 .griditem1 {
+  background: grey;
   margin: 50px;
 }
 
-.button {
+.word {
+  font-size: 90px;
+}
+
+.pos {
+  font-size: 40px;
+}
+
+.meaning {
+  font-size: 20px;
+  padding-bottom: 4px;
+}
+
+.offensives {
+  color: red;
+  font-size: 18px;
+  padding-bottom: 2px;
+}
+
+.synonym {
+  font-size: 18px;
+}
+
+.input {
+  margin-top: 30px;
+}
+
+input[type="submit"] {
   color: white;
-  font-weight: 800;
-  background: grey;
-  border-radius: 15px;
-  padding: 10px;
+  cursor: pointer;
+  padding: 15px 30px;
+  background: #0a1f44;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+  outline: none;
+}
+
+input[type="text"] {
+  color: var(--text_light);
+  width: 400px;
+  height: 55px;
+  padding: 5px 10px;
+  background: inherit;
+  border: solid 2px gray;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
   outline: none;
 }
 
 .display {
   font-family: "Rimouski";
   color: white;
-  width: 300px;
-  height: 200px;
+  width: 420px;
+  height: 300px;
 }
 
 .container1 {
-  padding-top: 20px;
+  padding-top: 55px;
   display: grid;
   grid-template: repeat(9, 100px) / repeat(1, 100px);
   gap: 10px;
@@ -38,6 +93,19 @@
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
+}
+
+header {
+  background-color: brown;
+  border: solid 2px brown;
+  height: 80px;
+}
+
+footer {
+  border: none;
+  background-color: brown;
+  border: solid 2px brown;
+  height: 100px;
 }
 
 @media screen and (min-width: 768px) {
