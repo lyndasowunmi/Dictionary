@@ -1,3 +1,4 @@
+// VARIABLES FOR THE HTML CLASSES
 let button = document.querySelector('.button');
 let inputValue = document.querySelector('.inputValue');
 let word = document.querySelector('.word');
@@ -18,6 +19,7 @@ button.addEventListener('click', function () {
       let offensivesValue = `Offensive word: `+ data[0]['meta'].offensive; //Checking if the word is offensive
       let synonymValue = `Synonyms: ` + data[0]['meta']['syns'][0]; // The synonyms
       
+       // DISPLAY SECTION COMPONENTS
        word.innerHTML = wordValue;
        partsOfSpeech.innerHTML = posValue;
        meaning.innerHTML = meaningValue;
@@ -30,9 +32,3 @@ button.addEventListener('click', function () {
 })
 
 
-//data[0]['meta']['syns'][0]; // The synonyms
- 
-
-/*let msg = new SpeechSynthesisUtterance(wordValue.value);
-msg.text = "Call me Ray for short";
-window.speechSynthesis.speak(msg); */
