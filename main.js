@@ -16,7 +16,7 @@ button.addEventListener('click', function () {
       let wordValue = '*' + data[0].hwi.hw + '*'; // The word itself
       let posValue = 'a'+ ' ' + data[0].fl; // The part of speech
       let meaningValue =  `Definition: `+ data[0].shortdef; // A short definition
-      let offensivesValue = `Offensive word: `+ data[0]['meta'].offensive; //Checking if the word is offensive
+      let offensivesValue = `Offensive word? `+ data[0]['meta'].offensive; //Checking if the word is offensive
       let synonymValue = `Synonyms: ` + data[0]['meta']['syns'][0]; // The synonyms
       
        // DISPLAY SECTION COMPONENTS

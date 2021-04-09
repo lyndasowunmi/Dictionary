@@ -13,7 +13,7 @@
   background: var(--bg-main);
   justify-content: center;
   display: flex;
-  grid-column-gap: 0px;
+  grid-column-gap: 10px;
   height: 100vh;
   padding: 0 40px 0 0px;
 }
@@ -34,6 +34,8 @@
 .griditem1 {
   background: var(--bg_light);
   margin: 10px;
+  min-height: 0;
+  min-width: 0;
 }
 
 /* DISPLAY SECTION */
@@ -41,12 +43,14 @@
   font-family: "Rimouski";
   color: var(--text_light);
   width: 290px;
-  height: 250px;
+  height: 270px;
   padding-left: 45px;
+  overflow: auto hidden;
 }
 
 .word {
-  font-size: 50px;
+  font-size: 3.5rem;
+  font-weight: bolder;
 }
 
 .pos {
@@ -149,7 +153,7 @@ input::placeholder {
   }
 
   .word {
-    font-size: 90px;
+    font-size: 70px;
   }
 
   .pos {
