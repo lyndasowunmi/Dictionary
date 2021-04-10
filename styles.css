@@ -45,7 +45,7 @@
   width: 290px;
   height: 270px;
   padding-left: 45px;
-  overflow: auto hidden;
+  /*overflow: auto hidden; */
 }
 
 .word {

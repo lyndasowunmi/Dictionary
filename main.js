@@ -17,15 +17,16 @@ button.addEventListener('click', function () {
       let posValue = 'a'+ ' ' + data[0].fl; // The part of speech
       let meaningValue =  `Definition: `+ data[0].shortdef; // A short definition
       let offensivesValue = `Offensive word? `+ data[0]['meta'].offensive; //Checking if the word is offensive
-      let synonymValue = `Synonyms: ` + data[0]['meta']['syns'][0]; // The synonyms
+      let synonymValue = `Synonyms: ` + data[0]['meta']['syns'][0] ; // The synonyms
+      let synonymValueMax =  synonymValue.split(",").slice(0, 5).join(", "); //Spacing & limit the synonym list to 5 examples max
+      
       
        // DISPLAY SECTION COMPONENTS
        word.innerHTML = wordValue;
        partsOfSpeech.innerHTML = posValue;
        meaning.innerHTML = meaningValue;
        offensives.innerHTML = offensivesValue;
-       synonym.innerHTML = synonymValue;
-      
+       synonym.innerHTML =  synonymValueMax;
     })
 
     .catch(err => alert("Wrong word or spelling!"));
