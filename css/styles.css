@@ -19,15 +19,15 @@
 }
 
 .heading {
+  background: var(--bg_light);
+  border-radius: 10px;
+  border: 2px solid var(--bg_light);
   color: var(--text_light);
   font-family: "Rimouski";
   font-weight: bolder;
-  text-align: center;
-  border: 2px solid var(--bg_light);
-  border-radius: 10px;
-  background: var(--bg_light);
-  padding: 2px;
   margin: 5px 0px 0 45px;
+  padding: 2px;
+  text-align: center;
   width: 220px;
 }
 
@@ -40,12 +40,11 @@
 
 /* DISPLAY SECTION */
 .display {
-  font-family: "Rimouski";
   color: var(--text_light);
-  width: 290px;
+  font-family: "Rimouski";
   height: 270px;
   padding-left: 45px;
-  /*overflow: auto hidden; */
+  width: 290px;
 }
 
 .word {
@@ -54,8 +53,8 @@
 }
 
 .pos {
-  font-size: 30px;
   color: var(--bg_dark);
+  font-size: 30px;
 }
 
 .meaning {
@@ -80,35 +79,35 @@
 }
 
 input[type="submit"] {
+  background: var(--bg_dark);
+  border-radius: 50px;
+  border: none;
   color: var(--text_light);
   cursor: pointer;
-  padding: 8px 15px;
-  background: var(--bg_dark);
-  border: none;
-  border-radius: 50px;
-  font-weight: bold;
   font-size: 20px;
+  font-weight: bold;
   margin: 10px 45px;
   outline: none;
+  padding: 8px 15px;
 }
 
 input[type="text"] {
-  color: var(--text_light);
-  width: 200px;
-  height: 40px;
-  padding: 20px 10px;
   background: inherit;
-  border: solid 2px var(--bg_light);
   border-radius: 10px;
-  font-weight: bold;
+  border: solid 2px var(--bg_light);
+  color: var(--text_light);
   font-size: 20px;
-  outline: none;
+  font-weight: bold;
+  height: 40px;
   margin: 10px 0px 0 45px;
+  outline: none;
+  padding: 20px 10px;
+  width: 200px;
 }
 
 .button:hover {
-  color: var(--bg_dark);
   background: var(--text_light);
+  color: var(--bg_dark);
 }
 
 input::placeholder {
@@ -118,17 +117,17 @@ input::placeholder {
 
 /* PICTURE LAYOUT SECTION */
 .container1 {
-  padding: 20px 0px 20px 0px;
   display: grid;
-  grid-template: repeat(9, 51px) / repeat(1, 53px);
   gap: 10px;
+  grid-template: repeat(9, 51px) / repeat(1, 53px);
+  padding: 20px 0px 20px 0px;
 }
 
 .box1 img {
-  width: 100%;
+  border-radius: 5px;
   height: 100%;
   object-fit: cover;
-  border-radius: 5px;
+  width: 100%;
 }
 
 /* MEDIA QUERIES - Common Styles*/
@@ -142,14 +141,14 @@ input::placeholder {
   }
 
   .heading {
+    margin-top: 55px;
     padding: 10px;
     width: 420px;
-    margin-top: 55px;
   }
 
   .display {
-    width: 420px;
     height: 300px;
+    width: 420px;
   }
 
   .word {
@@ -161,14 +160,14 @@ input::placeholder {
   }
 
   input[type="text"] {
-    width: 400px;
-    padding: 25px 10px;
     margin-top: 30px;
+    padding: 25px 10px;
+    width: 400px;
   }
 
   input[type="submit"] {
-    padding: 15px 30px;
     margin: 10px 45px;
+    padding: 15px 30px;
   }
 
   .container1 {
