@@ -8,6 +8,40 @@
   --text_bright: #ff0000;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* ALERTS BANNER SECTION */
+/* The alert message box */
+.alert {
+  background-color: var(--bg_dark);
+  border-radius: 0 !important;
+  color: white;
+  font-size: large;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+
+/* The close button */
+.closebtn {
+  color: white;
+  cursor: pointer;
+  float: right;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
 /* GRID COMPONENTS SECTION */
 .grid-container {
   background: var(--bg-main);
@@ -141,7 +175,6 @@ input::placeholder {
   }
 
   .heading {
-    margin-top: 55px;
     padding: 10px;
     width: 420px;
   }
